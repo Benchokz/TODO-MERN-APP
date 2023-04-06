@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Log tool versions') {
       steps {
-        sh '''git --version
-react --version
-node --version'''
+        sh 'git --version'
       }
     }
 
